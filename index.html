@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPM Method</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>CPM method</h1>
+        <p class="author">make with Manh-TY</p>
+    </div>
+    <div class="container">
+        
+        <div class="wrap-item">
+            <form class="form-group" action="">
+                <input type="text" id="taskname" value="" placeholder="Task name">
+                <input type="number" id="tasktime" placeholder="time of done (number)">
+                <button type="button" id="submit">Add task</button>
+                <button type="button" id="caculate">Caculate CPM</button>
+            </form>
+
+            <div class="tasklist">
+                <div class="head-title">
+                    <h2>task list</h2>
+                    <button type="button" class="reset ">reset ❌</button>
+                </div>
+                
+                <div class="wrap-tasklist">
+                    <ul class="tasknamel">
+                        <li>taskname</li>
+                    </ul>
+                    <ul class="tasktimel">
+                        <li>time of done</li>
+                    </ul>
+                    <ul class="taskdependency">
+                        <li>dependencies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="data-caculate">
+                <h3>caculate b1 b2</h3>
+                <div class="b1">
+                    <ul>
+                        <li>ESA = </li>
+                        <li>EFA =</li>
+                    </ul>
+                    <ul>
+                        <li>ESB =</li>
+                        <li>EFB =</li>
+                    </ul>
+                </div>
+
+                <div class="b2">
+                    <ul>
+                        <li>LSA = </li>
+                        <li>LFA =</li>
+                    </ul>
+                    <ul>
+                        <li>LSB =</li>
+                        <li>LFB =</li>
+                    </ul>
+                    <ul>
+                        <li>LSB =</li>
+                        <li>LFB =</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <canvas width="500px" height="500px" style="background-color: gray;"></canvas>
+    </div>
+    <script src="module/canvas.js" type="module"></script>
+    <script src="module/object.logic.Task.js" type="module"></script>
+    <script src="module/object.task.js" type="module"></script>
+    <script src="script.js" type="module"></script> 
+    
+</body>
+</html>
