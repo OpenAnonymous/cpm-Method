@@ -1,0 +1,1 @@
+export { SimpleTask } from './object.logic.Task';
